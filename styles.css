@@ -1,0 +1,233 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(silver, rgb(226, 225, 255), silver );
+    font-family: Times New Roman;
+
+}
+.text{
+
+    width: 350px;
+    text-align: center;
+    background: #f2f2f2;
+    margin: 30px auto;
+    display: block;
+    padding: 3px ;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(141, 157, 163);
+}
+p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer{
+    margin: auto;
+    background: rgb(179, 179, 179);
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.nav-bar{
+    width: 100% auto;
+    background: #424558;
+    height: 120px;
+}
+
+.img-prof{
+    margin: 20px auto;
+    text-align: center;
+}
+
+/*carousel text*/
+
+
+.carousel{
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.preTxt{
+
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 0;
+    height: 45px;
+    text-shadow: 2px 2px 2px  #544464;
+}
+
+ .changeHidden{
+    position: relative;
+    top: 0;
+    text-align: center;
+    height: 45px;
+    overflow: hidden;
+}
+
+.contenant{
+    position: relative;
+    animation: carousel 8s ease-in-out infinite;
+}
+
+.element{
+    font-size: 30px;
+    display: block;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px  #544464;
+}
+
+@keyframes carousel{
+    0%, 10%{
+        transform: translateY(0);
+    }
+    15%, 25%{
+        transform: translateY(-45px);
+    }
+    30%, 45%{
+        transform: translateY(-90px);
+    }
+    50%, 65%{
+        transform: translateY(-135px);
+    }
+    70%, 85%{
+        transform: translateY(-180px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }    
+}
+
+
+
+/*carousel image*/
+
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+
+    43%{
+        transform: translateX(-351px);
+    }
+
+    76%{
+        transform: translateX(-351px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.slider{
+    width: 351px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 5px 5px 10px rgb(141, 157, 163);
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.slides{
+    width: calc(351px * 2);
+    animation: glisse 10s infinite;
+}
+.slide{
+    float: left;
+}
+
+
+@media all and (min-width:760px){
+    .text{
+       width: 650px;
+    }
+    video{
+        width: 650px;
+    }
+    .re-img{
+        width: 650px;
+        height: 600px;
+    }
+
+
+    @keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+
+    43%{
+        transform: translateX(-650px);
+    }
+
+    76%{
+        transform: translateX(-650px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.slider{
+    width: 650px;
+
+}
+.slides{
+    width: calc(650px * 2);
+}
+
+}
+
+@media screen and (max-width: 360px){
+    .text{
+        width: 300px;
+        font-size: 20px;
+    }
+    video{
+        width: 300px;
+    }
+    .re-img{
+        width: 300px;
+        height: 276px;
+    }
+
+
+    @keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+
+    43%{
+        transform: translateX(-300px);
+    }
+
+    76%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.slider{
+    width: 300px;
+
+}
+.slides{
+    width: calc(300px * 2);
+}    
+}
